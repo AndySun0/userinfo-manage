@@ -30,10 +30,12 @@
         {
             button1 = new Button();
             time = new TextBox();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // button1
             // 
+            button1.Font = new Font("Consolas", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.Location = new Point(295, 78);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
@@ -49,11 +51,21 @@
             time.Size = new Size(504, 30);
             time.TabIndex = 1;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Location = new Point(131, 296);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(622, 352);
+            panel1.TabIndex = 2;
+            panel1.Paint += panel1_Paint;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1578, 844);
+            Controls.Add(panel1);
             Controls.Add(time);
             Controls.Add(button1);
             Name = "Form1";
@@ -66,5 +78,6 @@
 
         private Button button1;
         private TextBox time;
+        private Panel panel1;
     }
 }

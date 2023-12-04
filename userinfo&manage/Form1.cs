@@ -12,5 +12,10 @@ namespace userinfo_manage
             string timestr = DateTime.Now.ToString();
             time.Text = timestr;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            time.Text = "gg";
+        }
     }
 }
