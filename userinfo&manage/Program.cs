@@ -12,6 +12,7 @@ namespace userinfo_manage
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new UserInfo());
+            Application.Run(new Manage());
         }
     }
 }
